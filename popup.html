@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YT Subtitle Translate</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>YT Subtitle Translate</h1>
+      <p>Realtime dual captions on YouTube</p>
+    </header>
+
+    <label class="row">
+      <input id="enabled" type="checkbox" />
+      <span>Enable translation</span>
+    </label>
+
+    <label class="field">
+      <span>Target language</span>
+      <select id="targetLang">
+        <option value="th">Thai (th)</option>
+        <option value="en">English (en)</option>
+        <option value="ja">Japanese (ja)</option>
+        <option value="ko">Korean (ko)</option>
+        <option value="zh-CN">Chinese Simplified</option>
+        <option value="zh-TW">Chinese Traditional</option>
+        <option value="vi">Vietnamese (vi)</option>
+        <option value="id">Indonesian (id)</option>
+        <option value="es">Spanish (es)</option>
+        <option value="fr">French (fr)</option>
+        <option value="de">German (de)</option>
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Source language</span>
+      <select id="sourceLang">
+        <option value="auto">Auto detect</option>
+        <option value="en">English</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="zh-CN">Chinese</option>
+        <option value="th">Thai</option>
+      </select>
+    </label>
+
+    <label class="row">
+      <input id="showOriginal" type="checkbox" />
+      <span>Show original line</span>
+    </label>
+
+    <label class="field">
+      <span>Font size</span>
+      <input id="fontSize" type="range" min="14" max="32" step="1" />
+    </label>
+
+    <footer>
+      Turn on YouTube <strong>CC</strong> first. Extension reads live captions and
+      overlays the translation.
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
